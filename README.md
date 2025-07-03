@@ -20,7 +20,7 @@
 - Vps üzerinde yükleme adımlarına geçmeden önce almamız gereken faucetler var. Base Mainnet işlemler için pahallı olacağından onrada kurulum yapmayacağım. Test ağları olan Base Sepoli ve Eth Sepolia ağlarında olacak. Hangisini çalıştırmak istiyorsanız o ağda faucetleri almalısınız. İşlemler aynı sadece ağlar farklı.
 - Öncelikle testte kullanamak için bir cüzdana ihtiyacımız var. Eğer role alırken kullandığınız varsa o da olur. Ya da tekrar oluşturabilirsiniz. AMA kesinlikle mainnet, airdrop vs için kullandığınız bir cüzdanla giriş yapmayın. Test olduğu ve priv. key kullandığımız için güvenli olmayabilir.
 - İlk olarak hangi ağda kurulum yapacaksanız o ağa şuradan USDC fauceti alın > https://faucet.circle.com/
-- Daha sonra yinme aynı ağa Test Eth alın. Ben her ihtimale karşı 30 adet atmıştım. Karar sizin. Buradan ücreti alıyorsunuz ücretsiz bulduysanız sorun yok. > https://testnetbridge.com/sepolia
+- Daha sonra yine aynı ağa Test Eth alın. Ben her ihtimale karşı 30 adet atmıştım. Karar sizin. Buradan ücreti alıyorsunuz ücretsiz bulduysanız sorun yok. > https://testnetbridge.com/sepolia
 - Eğer Base Sepolia'ya ETH geçirecekseniz şu bridge kullanabilirsiniz. > https://superbridge.app/base-sepolia
 - Ekran kartlı bir vps kiralamamız lazım. Ben Vast.ai > https://cloud.vast.ai/?ref_id=271399 kulllanıyorum, videoda bunun üzerinden olacak. Tıklayarak üyelik açabilirsiniz.
 - Son olarak da blockpi.io üzerinden ücretsiz RPC alıyoruz. Hangi ağda kurulum yaptıysanız o ağdaki alın. Teşvikli testnet sırasında ücretsizler etkisi kalabilir, aynı yerden ücretliye dönmek gerekebilir.
