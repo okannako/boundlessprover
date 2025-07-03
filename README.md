@@ -27,7 +27,9 @@
 - Artık yükleme adımlarına geçip kurulumu yapabiliriz.
 
 - Kendim bir script ayarlıyacaktım fakat 0xMoei ayrıntılı bir script ayarlamış. Onun üzerinden kurulum yapmak zaman kazanmak açısından daha iyi oldu. Hem burada yazacaklarım hem de videoda anlatacaklarım onun üzerinden olacak. Bir nevi Türkçeye çevrilmesi diyebiliriz. İlk olarak kiraladığımız makinaya bağlanıyoruz.
-- Tmux ekranı açıyoruz çünkü kurulumlar uzun sürüyor server bilgisayarınızla iletişimi uzun bekleyişlerde koparabiliyor bu da kurulumu sonlandırır
+- Tmux ekranı açıyoruz çünkü kurulumlar uzun sürüyor server bilgisayarınızla iletişimi uzun bekleyişlerde koparabiliyor bu da kurulumu sonlandırır.
+- Kurulumun sırasında bizden cüzdan priv key ve seçtiğimiz ağa göre RPC isteyecek.
+
 ```
 apt install tmux
 tmux new-session -t boundless
@@ -49,7 +51,14 @@ chmod +x install_prover.sh
 # Run the installer
 ./install_prover.sh
 ```
-- Kurulumun sonunda bizden istediği belirli broker ayarları var bunlara değerler girmemiz gerekiyor. Bu ayarlar her sisteme her kullanıcıya ve ağın o anki durumuna göre değişebilir. O yüzden bireysel bir şekilde ayarlar üzerinde uğraşarak yapmanız gerekiyor. Peki bu ayarların anlamı ne ?  
+- Dashboard ekranına tekrar ulaşmak.
+```
+cd ~/boundless
+./prover.sh
+```
+### Broker Config ayarlarında neler yapmalıyız ve hangi ayar neyi ifade ediyor ?
+- Kurulum sonunda ise istediği belirli broker ayarları var bunlara değerler girmemiz gerekiyor. Bu ayarlar her sisteme her kullanıcıya ve ağın o anki durumuna göre değişebilir. O yüzden bireysel bir şekilde ayarlar üzerinde uğraşarak yapmanız gerekiyor. Peki bu ayarların anlamı ne ?  
+
   1️⃣ mcycle_price > 1 milyon hesaplama döngüsü (cycles) için verdiği fiyat yani bu değeri ne kadar düşük tutarsan diğer tekliflerin önüne geçme ihtimalin daha da artar. Ama değeri çok fazla düşürürsen zarar edersin ya da sistem bu değeri kabul etmez. Burada stabil bir değer çok öenmli.    
 
   2️⃣ peak_prove_khz > Bu parametre, node’unun ne kadar güçlü bir hesaplama kapasitesine sahip olduğunu Boundless sistemine bildiriyor Yani bu değeri yüksek yazarsak ve sistem karşılayamazsa, order başarısız olur. Düşük yazarsak ise güçlü makinanda potansiyelini kullanamazsın. (Ayrıca scriptte bunu test edebileceğimiz bir seçenek de var. Explorer'den bir orderı alıp ID'sini scriptten Run Benchmark (Order IDs) seçeneğini kullanarak girerseniz sizin kartınıza göre bir değer çıkarıyor. Bunun biraz altını girmeniz yeterli olacaktır.  
@@ -68,19 +77,13 @@ chmod +x install_prover.sh
   3️⃣ max_mcycle_limit ="10000"  
   4️⃣ min_deadline ="60"  
   5️⃣ max_concurrent_proofs ="2" veya "3"  
-  6️⃣ lockin_priority_gas = "1000000"  
-  
-- Dashboard ekranına tekrar ulaşmak.
-```
-cd ~/boundless
-./prover.sh
-```
+  6️⃣ lockin_priority_gas = "1000000"
+
+- Explorer Testnet ve Mainnet olarak ikiye ayrıldı. Hangi ağda çalıştırıyorsanız o explorerdan kontrol edebilirsiniz.  
+  1️⃣ Testnet Ağları: https://explorer.beboundless.xyz/orders  
+  2️⃣ Mainnet Ağı (Base): https://explorer.testnet.beboundless.xyz/orders  
+
 ![boundddd](https://github.com/user-attachments/assets/5bbe937d-703b-4dff-a640-4c54ebda6306)
-
-## Broker Config ayarlarında neler yapmalıyız ve hangi ayar neyi ifade ediyor ?
-
-## Dashboard'da ki seçenekler ne işe yarıyor _
-
 
 ## Ek Kodlar
 - İsim vererek tmux ekranı açmak: ````tmux new-session -t boundless````
