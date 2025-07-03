@@ -49,6 +49,13 @@ chmod +x install_prover.sh
 # Run the installer
 ./install_prover.sh
 ```
+- Kurulumun sonunda bizden istediği belirli broker ayarları var bunlara değerler girmemiz gerekiyor. Bu ayarlar her sisteme her kullanıcıya ve ağın o anki durumuna göre değişebilir. O yüzden bireysel bir şekilde ayarlar üzerinde uğraşarak yapmanız gerekiyor. Peki bu ayarların anlamı ne ?  
+  1️⃣ mcycle_price > 1 milyon hesaplama döngüsü (cycles) için verdiği fiyat yani bu değeri ne kadar düşük tutarsan diğer tekliflerin önüne geçme ihtimalin daha da artar. Ama değeri çok fazla düşürürsen zarar edersin ya da sistem bu değeri kabul etmez. Burada stabil bir değer çok öenmli.  
+  2️⃣ peak_prove_khz =  
+  3️⃣ max_mcycle_limit =  
+  4️⃣ min_deadline =  
+  5️⃣ max_concurrent_proofs =  
+  6️⃣ lockin_priority_gas =  
 
 - Dashboard ekranına tekrar ulaşmak.
 ```
