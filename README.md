@@ -62,7 +62,7 @@ chmod +x install_prover.sh
 
   6️⃣ lockin_priority_gas > Bu değer, senin broker (node) sisteminin bir iş emrini (order) almaya çalışırken ne kadar öncelikli olduğunu belirlemek için fazladan ödeyeceği gas miktarını ifade ediyor. Çok yükseltmek daha rahat lock-in yapmaya yarar ama gereksiz gas harcanmasına nededn olur.    
 
-⚠️Buradaki değerlerin hepsi makian özelliklerinize göre değiştiğinden net bir değer veremiyorum. Ancak alt tarafa 4090 için kullandığım ortalama değerleri yazacağım. Sizde kendi durumunuza göre değerleri girip denemeler yapıp uygun derleri bulabilirsiniz.  
+- ⚠️ Buradaki değerlerin hepsi makina özelliklerinize göre değiştiğinden net bir değer veremiyorum. Ancak alt tarafa 4090 için kullandığım ortalama değerleri yazacağım. Sizde kendi durumunuza göre değerleri girip denemeler yapıp uygun derleri bulabilirsiniz.   
   1️⃣ mcycle_price ="0,0000000000001"  
   2️⃣ peak_prove_khz ="480"  
   3️⃣ max_mcycle_limit ="10000"  
