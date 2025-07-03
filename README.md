@@ -57,7 +57,7 @@ cd ~/boundless
 ```
 ![boundddd](https://github.com/user-attachments/assets/5bbe937d-703b-4dff-a640-4c54ebda6306)
 
-- Broker Config ayarlarında neler yapmalıyız ve hangi ayar neyi ifade ediyor ?
+## Broker Config ayarlarında neler yapmalıyız ve hangi ayar neyi ifade ediyor ?
 
 ## Dashboard'da ki seçenekler ne işe yarıyor _
 
