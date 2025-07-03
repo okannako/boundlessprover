@@ -51,12 +51,25 @@ chmod +x install_prover.sh
 ```
 - Kurulumun sonunda bizden istediği belirli broker ayarları var bunlara değerler girmemiz gerekiyor. Bu ayarlar her sisteme her kullanıcıya ve ağın o anki durumuna göre değişebilir. O yüzden bireysel bir şekilde ayarlar üzerinde uğraşarak yapmanız gerekiyor. Peki bu ayarların anlamı ne ?  
   1️⃣ mcycle_price > 1 milyon hesaplama döngüsü (cycles) için verdiği fiyat yani bu değeri ne kadar düşük tutarsan diğer tekliflerin önüne geçme ihtimalin daha da artar. Ama değeri çok fazla düşürürsen zarar edersin ya da sistem bu değeri kabul etmez. Burada stabil bir değer çok öenmli.    
-  2️⃣ peak_prove_khz > Bu parametre, node’unun ne kadar güçlü bir hesaplama kapasitesine sahip olduğunu Boundless sistemine bildiriyor Yani bu değeri yüksek yazarsak ve sistem karşılayamazsa, order başarısız olur. Düşük yazarsak ise güçlü makinanda potansiyelini kullanamazsın.  
+
+  2️⃣ peak_prove_khz > Bu parametre, node’unun ne kadar güçlü bir hesaplama kapasitesine sahip olduğunu Boundless sistemine bildiriyor Yani bu değeri yüksek yazarsak ve sistem karşılayamazsa, order başarısız olur. Düşük yazarsak ise güçlü makinanda potansiyelini kullanamazsın. (Ayrıca scriptte bunu test edebileceğimiz bir seçenek de var. Explorer'den bir orderı alıp ID'sini scriptten Run Benchmark (Order IDs) seçeneğini kullanarak girerseniz sizin kartınıza göre bir değer çıkarıyor. Bunun biraz altını girmeniz yeterli olacaktır.  
+
   3️⃣ max_mcycle_limit > Bir iş emrinde kabul edilebilecek en fazla hesaplama döngüsü (million cycles = mcycles) sınırını belirleyen bir parametredir. Büyük ve riskli işlerden kaçınarak ceza almaktan korunmuş oluruz. Vereceğimiz değer ne kadar yüksek olursa risk artar.  
+
   4️⃣ min_deadline > Node'un bir order için deadline’a (son teslim süresine) ne kadar zaman kalmışsa, o işi kabul edip etmeyeceğini belirler. Eğer bu değer düşük olursa işin teslim süresi çok yakın olur ve node order'ı tamalayamaz ise ve ceza yersin. Düşük değer risk yüksek.  
+
   5️⃣ max_concurrent_proofs = Bu ayar node'un aynı anda kaç tane order kilitleyip işlemeye başlayabileceğini belirtiyor. Yani buradaki değer aynı anda kaç iş almaya çalışabileceğinizi belirtir. Fazlası kartı yorar ve order'ı teslim edemezsin.  
+
   6️⃣ lockin_priority_gas > Bu değer, senin broker (node) sisteminin bir iş emrini (order) almaya çalışırken ne kadar öncelikli olduğunu belirlemek için fazladan ödeyeceği gas miktarını ifade ediyor. Çok yükseltmek daha rahat lock-in yapmaya yarar ama gereksiz gas harcanmasına nededn olur.    
 
+⚠️Buradaki değerlerin hepsi makian özelliklerinize göre değiştiğinden net bir değer veremiyorum. Ancak alt tarafa 4090 için kullandığım ortalama değerleri yazacağım. Sizde kendi durumunuza göre değerleri girip denemeler yapıp uygun derleri bulabilirsiniz.  
+  1️⃣ mcycle_price ="0,0000000000001"  
+  2️⃣ peak_prove_khz ="480"  
+  3️⃣ max_mcycle_limit ="10000"  
+  4️⃣ min_deadline ="60"  
+  5️⃣ max_concurrent_proofs ="2" veya "3"  
+  6️⃣ lockin_priority_gas = "1000000"  
+  
 - Dashboard ekranına tekrar ulaşmak.
 ```
 cd ~/boundless
