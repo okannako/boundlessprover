@@ -29,6 +29,7 @@
 - Kendim bir script ayarlıyacaktım fakat 0xMoei ayrıntılı bir script ayarlamış. Onun üzerinden kurulum yapmak zaman kazanmak açısından daha iyi oldu. Hem burada yazacaklarım hem de videoda anlatacaklarım onun üzerinden olacak. Bir nevi Türkçeye çevrilmesi diyebiliriz. İlk olarak kiraladığımız makinaya bağlanıyoruz.
 - Tmux ekranı açıyoruz çünkü kurulumlar uzun sürüyor server bilgisayarınızla iletişimi uzun bekleyişlerde koparabiliyor bu da kurulumu sonlandırır.
 - Kurulumun sırasında bizden cüzdan priv key ve seçtiğimiz ağa göre RPC isteyecek.
+- En sonda kurulum bittiğinde ve bize script ekranını çıkardığında Önce USDC stake edip sonra Start Broker seçeneeğiyle devam ediyoruz.
 
 ```
 apt install tmux
