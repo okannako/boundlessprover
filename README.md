@@ -81,8 +81,8 @@ cd ~/boundless
   6️⃣ lockin_priority_gas = "1000000"
 
 - Explorer Testnet ve Mainnet olarak ikiye ayrıldı. Hangi ağda çalıştırıyorsanız o explorerdan kontrol edebilirsiniz.  
-  1️⃣ Testnet Ağları: https://explorer.beboundless.xyz/orders  
-  2️⃣ Mainnet Ağı (Base): https://explorer.testnet.beboundless.xyz/orders  
+  1️⃣ Testnet Ağları: https://explorer.testnet.beboundless.xyz/orders  
+  2️⃣ Mainnet Ağı (Base): https://explorer.beboundless.xyz/orders  
 
 ![boundddd](https://github.com/user-attachments/assets/5bbe937d-703b-4dff-a640-4c54ebda6306)
 
