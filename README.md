@@ -73,7 +73,7 @@ cd ~/boundless
 
 - UYARI: Buradaki değerlerin hepsi makina özelliklerinize göre değiştiğinden net bir değer veremiyorum. Ancak alt tarafa 4090 için kullandığım ortalama değerleri yazacağım. Sizde kendi durumunuza göre değerleri girip denemeler yapıp uygun derleri bulabilirsiniz.
    
-  1️⃣ mcycle_price ="0,0000000000001"  
+  1️⃣ mcycle_price ="0.0000000000001"  
   2️⃣ peak_prove_khz ="480"  
   3️⃣ max_mcycle_limit ="10000"  
   4️⃣ min_deadline ="60"  
